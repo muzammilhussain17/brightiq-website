@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="About BrightIQ Solutions — founded by engineers, built on precision, reliability, and structured delivery." />
+    <title>About Us | BrightIQ Solutions</title>
+    <link rel="icon" type="image/png" href="/logo-transparent.svg" />
+  <link rel="stylesheet" href="/style.css" />
+    <style>
+        .about-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 72px;
+            align-items: center;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        .value-card {
+            padding: 22px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-glass);
+            border-radius: 12px;
+            transition: var(--transition);
+        }
+
+        .value-card:hover {
+            border-color: rgba(37, 99, 235, 0.25);
+            background: var(--cyan-dim);
+        }
+
+        .value-icon {
+            margin-bottom: 10px;
+            color: var(--cyan);
+        }
+
+        .value-card h4 {
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+        }
+
+        .value-card p {
+            font-size: 13px;
+        }
+
+        @media (max-width: 900px) {
+            .about-split {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="/" class="logo"><img src="/logo-transparent.svg" alt="BrightIQ Solutions" />
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/index.html" class="nav-link">Home</a></li>
+                    <li><a href="/services.html" class="nav-link">Services</a></li>
+                    <li><a href="/technologies.html" class="nav-link">Technologies</a></li>
+                    <li><a href="/about.html" class="nav-link active">About</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <a href="/contact.html" class="btn btn-primary btn-sm">Start a Project</a>
+                <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="/" class="nav-link">Home</a><a href="/services.html" class="nav-link">Services</a>
+        <a href="/technologies.html" class="nav-link">Technologies</a><a href="/about.html"
+            class="nav-link active">About</a>
+        <a href="/contact.html" class="btn btn-primary" style="margin-top:16px;justify-content:center;">Start a
+            Project</a>
+    </div>
+
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-glow"></div>
+            <div class="page-hero-grid"></div>
+            <div class="container" style="position:relative;z-index:1;">
+                <div class="eyebrow reveal">Who We Are</div>
+                <h1 class="reveal reveal-d1">Built on Engineering.<br>Not <span class="text-gradient">Marketing.</span>
+                </h1>
+                <p class="reveal reveal-d2">We don't promise to "transform your business." We build reliable, scalable
+                    software systems that do the work for you.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container about-split">
+                <div class="reveal">
+                    <div class="eyebrow">Our Story</div>
+                    <h2>Founded by Engineers,<br><span class="text-gradient">Run by Engineers.</span></h2>
+                    <p style="margin:16px 0;">BrightIQ Solutions was built from frustration. Too many agencies were
+                        selling
+                        strategy decks while offshore teams disappeared after handoff. We chose a different model:
+                        senior engineers who stay accountable from architecture to deployment.</p>
+                    <p>We've shipped backend APIs handling 10M+ monthly requests, mobile apps with 4.8-star ratings, and
+                        cloud infrastructure with zero-downtime for 3+ years running.</p>
+                    <div
+                        style="margin-top:28px;padding:22px;background:var(--cyan-dim);border:1px solid rgba(37,99,235,0.15);border-radius:10px;">
+                        <p
+                            style="font-style:italic;color:var(--text-primary);font-size:1rem;font-family:var(--font-heading);">
+                            "We build scalable backend systems. We deliver production-ready applications. That's the
+                            job."</p>
+                    </div>
+                    <a href="/contact.html" class="btn btn-primary" style="margin-top:28px;">Start a Conversation →</a>
+                </div>
+                <div class="reveal reveal-d2">
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75"
+                                    viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 8v4l3 3" />
+                                </svg>
+                            </div>
+                            <h4>Precision</h4>
+                            <p>Rigorous testing and architecture reviews before every commit.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75"
+                                    viewBox="0 0 24 24">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" />
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                                </svg>
+                            </div>
+                            <h4>Reliability</h4>
+                            <p>99.9% uptime isn't a promise. It's our engineering standard.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75"
+                                    viewBox="0 0 24 24">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                </svg>
+                            </div>
+                            <h4>Transparency</h4>
+                            <p>Direct communication. No jargon. No hidden blockers.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75"
+                                    viewBox="0 0 24 24">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                                </svg>
+                            </div>
+                            <h4>Structure</h4>
+                            <p>Documented systems. Clean codebases. Scalable architectures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section"
+            style="background:var(--bg-secondary);border-top:1px solid var(--border-glass);border-bottom:1px solid var(--border-glass);padding:72px 0;">
+            <div class="container">
+                <div class="section-header center reveal">
+                    <div class="eyebrow">Foundation</div>
+                    <h2>Mission, Vision <span class="text-gradient">& Why Us</span></h2>
+                </div>
+                <div class="grid-3">
+                    <div class="card reveal reveal-d1">
+                        <div class="card-icon"><svg width="20" height="20" fill="none" stroke="currentColor"
+                                stroke-width="1.75" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 8v4l3 3" />
+                            </svg></div>
+                        <h3>Mission</h3>
+                        <p>Deliver transparent, senior-level engineering to enterprises and growth-stage companies
+                            without offshore compromise.</p>
+                    </div>
+                    <div class="card accent-purple reveal reveal-d2">
+                        <div class="card-icon purple"><svg width="20" height="20" fill="none" stroke="currentColor"
+                                stroke-width="1.75" viewBox="0 0 24 24">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg></div>
+                        <h3>Vision</h3>
+                        <p>A world where software is built right the first time — maintainable, tested, documented, and
+                            fully owned by the client.</p>
+                    </div>
+                    <div class="card accent-emerald reveal reveal-d3">
+                        <div class="card-icon emerald"><svg width="20" height="20" fill="none" stroke="currentColor"
+                                stroke-width="1.75" viewBox="0 0 24 24">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg></div>
+                        <h3>Why Choose Us</h3>
+                        <p>You speak directly to the engineer building your product. No project managers, no
+                            outsourcing, no lag.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top:0;margin-top:96px;">
+            <div class="container">
+                <div class="cta-section reveal">
+                    <div class="eyebrow" style="justify-content:center;display:flex;">Work With Us</div>
+                    <h2>Ready to Meet <span class="text-gradient">the Team?</span></h2>
+                    <p class="section-desc">Let's talk about your engineering needs and how we can build together.</p>
+                    <div class="cta-btns"><a href="/contact.html" class="btn btn-primary">Start the Conversation →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a href="/" class="logo"><img src="/logo-transparent.svg" alt="BrightIQ Solutions" />
+                    </a>
+                    <p>Engineering-driven solutions for modern business infrastructure.</p>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-title">Company</div><a href="/about.html">About Us</a><a
+                        href="/contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-title">Expertise</div><a href="/services.html">Services</a><a
+                        href="/technologies.html">Technologies</a>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-title">Contact</div><a
+                        href="mailto:hello@brightiq.com">hello@brightiq.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 BrightIQ Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
